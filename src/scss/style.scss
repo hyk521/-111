@@ -1,0 +1,81 @@
+@import "_mixin.scss";
+@import "common.scss";
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: px2rem(17px);
+    .header {
+        width: 100%;
+        height: px2rem(50px);
+        display: flex;
+        justify-content: space-around;
+        line-height: px2rem(50px);
+        color: red;
+        img {
+            height: px2rem(20px);
+            margin-top: px2rem(15px);
+        }
+    }
+    .banner {
+        width: 100%;
+        height: px2rem(120px);
+        img {
+            width: 100%;
+            height: px2rem(120px);
+        }
+    }
+    .list {
+        width: 100%;
+        height: px2rem(120px);
+        li {
+            width: 100%;
+            height: px2rem(40px);
+            line-height: px2rem(40px);
+            display: flex;
+            justify-content: space-around;
+            border-bottom: 1px solid #ccc;
+            p {
+                width: 80%;
+                height: px2rem(40px);
+                display: flex;
+                justify-content: space-between;
+                span {
+                    height: px2rem(30px);
+                    margin-top: px2rem(10px);
+                    color: red;
+                    border: 1px solid red;
+                }
+            }
+            b {
+                width: 20%;
+                height: px2rem(40px);
+                text-align: center;
+                color: #ccc;
+                border-left: 1px solid #ccc;
+            }
+        }
+    }
+    .section {
+        width: 100%;
+        overflow-y: scroll;
+        margin-top: px2rem(10px);
+        dl {
+            width: 100%;
+            height: px2rem(80px);
+            display: flex;
+            margin-top: px2rem(15px);
+            margin: px2rem(5px);
+            dt {
+                margin-right: px2rem(8px);
+            }
+        }
+    }
+}
